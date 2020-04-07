@@ -1,0 +1,93 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 15px;
+  font-family: 'Inter', sans-serif;
+
+}
+
+h1 {
+  font-size: 32pt;
+}
+
+.mainContainer {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 100px;
+}
+
+.calcContainer {
+  grid-row: 1;
+}
+
+.inputBlockCalc {
+  margin-left: 15px;
+  font-size: 16pt;
+}
+
+.fortuneContainer {
+  grid-row: 2;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-row-gap: 30px;
+}
+
+.inputBlockFortune {
+  grid-row: 1;
+  margin-left: 15px;
+  font-size: 16pt;
+}
+
+#fortune-output {
+  grid-row: 2;
+  align-self: center;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+
+  font-size: 16pt;
+  margin-left: 15px;
+}
+
+#fortune-output-paragraph {
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1pt;
+
+  background-color: white;
+  border-radius: 10%;
+
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transition: 3s;
+}
+
+@keyframes rotate {
+  /* 0%{transform: rotate(0deg);}
+  33%{transform: rotate(360deg);}
+  66%{transform: rotate(360deg);} */
+  /* 50%{transform: rotate(360deg);} */
+  100%{transform: rotate(360deg);}
+}
